@@ -10,7 +10,8 @@ a{color:var(--mint)}a:hover{color:var(--amber)}
 .wrap{max-width:760px;margin:0 auto;padding:0 16px}
 header.top{display:flex;align-items:center;gap:12px;padding:18px 0}
 header.top img{width:44px;height:44px;border-radius:50%}
-header.top .name{font-weight:800;font-size:20px;color:var(--paper);text-decoration:none}
+header.top .name{font-weight:800;font-size:20px;color:var(--paper);text-decoration:none;white-space:nowrap}
+@media (max-width:420px){header.top .name{font-size:17px}nav a{margin-left:10px}}
 nav{margin-left:auto;font:500 12px/1 "Martian Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
 nav a{margin-left:16px;text-decoration:none}
 .hero img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--deep)}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Fieldnote Zero</title>
+<meta name="description" content="Privacy policy for the Fieldnote Zero website and the Fieldnote Zero Studio Tool (YouTube API client).">
+<link rel="icon" href="assets/favicon-64.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <img src="assets/fieldnote-zero-mark-256.png" alt="">
+  <a class="name" href="./">Fieldnote Zero</a>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy</a></nav>
+</header>
+
+<p class="eyebrow">Effective 8 November 2026</p>
+<h1>Privacy Policy</h1>
+<p>This policy covers two things: this website, and the <strong>Fieldnote Zero Studio Tool</strong>, a private
+application that uses Google's YouTube APIs to manage the Fieldnote Zero YouTube channel
+(<a href="https://www.youtube.com/@fieldnotezerohq">@fieldnotezerohq</a>).</p>
+
+<h2>1. Who uses the Studio Tool</h2>
+<p>The Studio Tool is used only by the owner of the Fieldnote Zero channel, on the owner's own computer. It is not
+offered to the public, and it does not sign in, collect data from, or act for any other person or channel. Before any
+change, it checks that the authorized channel is Fieldnote Zero and refuses to act on any other channel.</p>
+
+<h2>2. Google user data the Studio Tool accesses</h2>
+<p>When the channel owner signs in with Google, the owner grants these permissions (OAuth scopes):</p>
+<table>
+<tr><th>Scope</th><th>What the tool does with it</th></tr>
+<tr><td><code>youtube</code></td><td>Reads the channel's identity (channel ID, title, handle), public statistics, upload list and video
+status; sets thumbnails; updates the channel's banner, description and watermark; deletes the owner's own test
+uploads when asked.</td></tr>
+<tr><td><code>youtube.upload</code></td><td>Uploads the channel's own videos, always as private first.</td></tr>
+<tr><td><code>yt-analytics.readonly</code></td><td>Reads channel and video performance reports (for example views, watch time,
+average view duration, audience retention, subscribers gained and lost).</td></tr>
+</table>
+<p>The tool does not request access to Gmail, Drive, contacts, comments from viewers, or revenue data. It does not
+access the personal data of viewers; YouTube Analytics reports are aggregated statistics.</p>
+
+<h2>3. How the data is used</h2>
+<ul>
+  <li>To publish and manage the channel's own videos and branding, at the owner's direction.</li>
+  <li>To review the channel's performance and improve future episodes.</li>
+</ul>
+<p>The data is not sold, rented, used for advertising, or used to train general-purpose AI models. It is not shared
+with anyone except as described in section 4.</p>
+
+<h2>4. Who can see it</h2>
+<ul>
+  <li><strong>Google / YouTube</strong>, which provide the APIs.</li>
+  <li><strong>The owner's AI assistant.</strong> The owner operates the tool with help from an AI assistant
+  (Anthropic's Claude). Command results, such as channel statistics and analytics figures, can be seen by that
+  assistant while it works for the owner. OAuth tokens and client secrets are never shown to it in output.</li>
+</ul>
+<p>No other third parties receive Google user data.</p>
+
+<h2>5. Storage and security</h2>
+<ul>
+  <li>OAuth credentials (the client file and refresh token) are stored only on the owner's computer, in a folder
+  readable only by the owner's Windows account. They are never placed in code repositories, notes, or this website.</li>
+  <li>Analytics results and upload records are stored in the owner's local project files.</li>
+  <li>All API traffic uses HTTPS. If storage ever moves to a cloud service (for example encrypted repository
+  secrets for scheduled jobs), this policy will be updated first.</li>
+</ul>
+
+<h2>6. Retention and deletion</h2>
+<ul>
+  <li>The refresh token is kept until the owner revokes it or the tool is retired, then deleted.</li>
+  <li>Analytics records are kept for as long as they are useful for running the channel, and can be deleted at any time.</li>
+  <li>To revoke access at any time, remove "Fieldnote Zero" at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking stops all access
+  immediately; the local token is then deleted.</li>
+</ul>
+
+<h2>7. Google and YouTube policies</h2>
+<p>The Studio Tool uses YouTube API Services. By using it, the account holder is bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is described in
+the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>The Studio Tool's use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements.</p>
+
+<h2>8. This website</h2>
+<p>This is a static website. It sets no cookies, runs no analytics or advertising, and has no forms. It is hosted
+on GitHub Pages; GitHub may log technical request data such as IP addresses for security, as described in the
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+
+<h2>9. Changes and contact</h2>
+<p>Changes to this policy are published on this page with a new effective date. Questions or requests:
+open an issue at <a href="https://github.com/ruyima1/fieldnote-zero/issues">github.com/ruyima1/fieldnote-zero/issues</a>.</p>
+
+<footer>
+  <a href="./">Home</a><a href="https://www.youtube.com/@fieldnotezerohq">YouTube</a><br>
+  © 2026 Fieldnote Zero.
+</footer>
+</div>
+</body>
+</html>
